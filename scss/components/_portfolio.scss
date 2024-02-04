@@ -1,0 +1,34 @@
+.portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.portfolio-list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.portfolio-btn {
+  color: $title-cl;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: $light-cl;
+  padding: 6px 22px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background, color, box-shadow;
+
+  &:hover,
+  &:focus {
+    background: $accent-cl;
+    color: $secondary-txt-cl;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}

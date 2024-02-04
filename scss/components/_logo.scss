@@ -1,0 +1,25 @@
+.logo {
+  color: $accent-cl;
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-right: 93px;
+}
+.logo-dark {
+  color: $logo-dark-cl;
+}
+.logo-down {
+  color: $accent-cl;
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+  margin-bottom: 20px;
+}
+.logo-light {
+  color: $logo-light-cl;
+}

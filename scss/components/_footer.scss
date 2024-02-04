@@ -1,0 +1,18 @@
+.down-block {
+  background: $down-block-cl;
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.container-logo {
+  margin-right: 70px;
+}
+
+.page-adress-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}

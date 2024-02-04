@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: $main-font;
+  color: $main-txt-cl;
+  background-color: $logo-light-cl;
+  font-size: 14px;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
