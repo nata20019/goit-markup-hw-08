@@ -3,8 +3,10 @@
   align-items: center;
   margin-right: auto;
 }
-.page-nav {
-  display: none;
+@media only screen and (max-width: 767.98px) {
+  .page-nav {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-nav {
@@ -52,8 +54,10 @@
     background: $accent-cl;
   }
 }
-.page-adress {
-  display: none;
+@media only screen and (max-width: 480px) {
+  .page-adress {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-adress {
@@ -88,6 +92,12 @@
   &:focus {
     color: $accent-cl;
   }
+}
+.menu-open-btn {
+  padding: 0;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
 }
 .footer-address {
   color: $logo-light-cl;
