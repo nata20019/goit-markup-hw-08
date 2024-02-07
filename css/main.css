@@ -49,9 +49,19 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-right: 331px;
+  padding: 16px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
 .logo-dark {
   color: #000000;
 }
@@ -287,7 +297,7 @@ img {
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.02em;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -320,7 +330,7 @@ img {
   background: #2196f3;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767.98px) {
   .page-adress {
     display: none;
   }
@@ -330,15 +340,20 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1600px) {
   .page-adress {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
   }
 }
 .adress-info {
@@ -348,10 +363,10 @@ img {
 
 .adress {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,6 +385,11 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1600px) {
+  .adress {
+    font-size: 14px;
+  }
+}
 .menu-open-btn {
   padding: 0;
   line-height: 0;
@@ -377,6 +397,16 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 .footer-address {
   color: #fff;
   font-weight: 400;

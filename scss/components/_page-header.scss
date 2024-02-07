@@ -11,13 +11,11 @@
 @media screen and (min-width: 768px) {
   .page-nav {
     display: flex;
-    gap: 50px;
   }
 }
 @media screen and (min-width: 1600px) {
   .page-nav {
     display: flex;
-    gap: 50px;
   }
 }
 
@@ -26,7 +24,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.02em;
   display: inline-flex;
   padding: 32px 0;
   transition-duration: 250ms;
@@ -54,7 +52,17 @@
     background: $accent-cl;
   }
 }
-@media only screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+  .link {
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .link {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
   .page-adress {
     display: none;
   }
@@ -62,13 +70,14 @@
 @media screen and (min-width: 768px) {
   .page-adress {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1600px) {
   .page-adress {
-    display: flex;
-    gap: 50px;
+    flex-direction: row;
+    gap: 40px;
   }
 }
 
@@ -77,13 +86,11 @@
 }
 .adress {
   color: $main-txt-cl;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0.28px;
-  display: flex;
+  letter-spacing: 0.02em;
   align-items: center;
-  gap: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
@@ -93,11 +100,51 @@
     color: $accent-cl;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .adress {
+    font-size: 14px;
+    gap: 40px;
+  }
+}
 .menu-open-btn {
   padding: 0;
   line-height: 0;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $logo-light-cl;
+    top: 0;
+    left: 0;
+  }
+  .menu-close-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    fill: #212121;
+    stroke-width: 1px;
+    stroke: #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 .footer-address {
   color: $logo-light-cl;

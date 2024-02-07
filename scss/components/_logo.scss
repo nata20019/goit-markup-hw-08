@@ -5,7 +5,17 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-right: 331px;
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 .logo-dark {
   color: $logo-dark-cl;
