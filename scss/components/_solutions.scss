@@ -1,27 +1,71 @@
 .solutions {
   background-color: $secondary-bg-cl;
-  padding: 188px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-mob-1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  margin: auto;
+  margin: 0;
 }
-
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url("../images/hero-mob-2x-min.jpg");
+  }
+}
+@media only screen and (min-width: 768px) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url("../images/hero-tab-1x-min.jpg");
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url("../images/hero-tab-2x-min.jpg");
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url("../images/hero-desk-1x-min.jpg");
+  }
+}
+@media only screen and (min-width: 1600px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url("../images/hero-desk-2x-min.jpg");
+  }
+}
 .solution__title {
   color: $logo-light-cl;
-  text-align: center;
-  font-size: 44px;
   font-weight: 900;
-  line-height: 60px; /* 136.364% */
-  letter-spacing: 2.64px;
+  font-size: 26px;
+  line-height: 1.61538;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  margin: 0 auto;
+  text-align: center;
+  margin: 118px 60px;
   margin-bottom: 30px;
+  width: 360px;
+  height: 84px;
 }
