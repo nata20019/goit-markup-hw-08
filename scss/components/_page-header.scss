@@ -3,24 +3,6 @@
   align-items: center;
   margin-right: auto;
 }
-@media only screen and (max-width: 767.98px) {
-  .page-nav {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-nav {
-    display: flex;
-    gap: 50px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .page-nav {
-    display: flex;
-    gap: 50px;
-  }
-}
-
 .link {
   color: $title-cl;
   font-size: 14px;
@@ -54,23 +36,6 @@
     background: $accent-cl;
   }
 }
-.page-adress {
-  @media only screen and (max-width: 767.98px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  @media screen and (min-width: 1600px) {
-    flex-direction: row;
-    gap: 40px;
-  }
-}
-
 .adress-info {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -88,79 +53,6 @@
   &:hover,
   &:focus {
     color: $accent-cl;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .adress {
-    font-size: 14px;
-    gap: 40px;
-  }
-}
-.menu-open-btn {
-  @media screen and (max-width: 767.98px) {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 10px;
-    right: 10px;
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1600px) {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767.98px) {
-  .mobile-menu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: $logo-light-cl;
-    top: 0;
-    left: 0;
-    padding: 48px 40px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    transform: translateX(-100%);
-    transition: transform 300ms ease-in;
-  }
-  .mobile-menu.is-open {
-    transform: translateX(0);
-  }
-  .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .menu-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 29px;
-    height: 29px;
-    padding: 0;
-    line-height: 0;
-    background-color: transparent;
-
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid rgba(231, 233, 252, 1);
-    // fill: #212121;
-    // stroke-width: 1px;
-    // stroke: #000;
-    // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
 .menu-nav {
@@ -182,8 +74,7 @@
   margin-top: 306px;
   margin-bottom: 64px;
 }
-.menu-adress-item {
-}
+
 .menu-adress-tel {
   font-weight: 500;
   font-size: 34px;
@@ -236,4 +127,100 @@
 }
 .contact-icon {
   fill: currentColor;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .page-nav {
+    display: none;
+  }
+  .page-adress {
+    display: none;
+  }
+  .menu-open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $logo-light-cl;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in;
+  }
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 29px;
+    height: 29px;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(231, 233, 252, 1);
+    // fill: #212121;
+    // stroke-width: 1px;
+    // stroke: #000;
+    // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .page-nav {
+    display: flex;
+    gap: 50px;
+  }
+
+  .page-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-nav {
+    display: flex;
+    gap: 50px;
+  }
+  .page-adress {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .adress {
+    font-size: 14px;
+    gap: 40px;
+  }
 }

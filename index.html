@@ -230,15 +230,44 @@
       <section class="page-team">
         <div class="container">
           <h2 class="page-title-inside">Наша команда</h2>
-          <ul class="list">
+          <ul class="list-team">
             <li class="list-first">
-              <img
-                class="list-foto"
-                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
-                src="./images/img1.jpg"
-                width="270"
-                alt="Ігор Дем'яненко.Product Designer"
-              />
+              <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img1-desk-1x.jpg 1x,
+                    ./images/img1-desk-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img1-tab-1x.jpg 1x,
+                    ./images/img1-tab-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img1-desk-1x.jpg"
+                  width="270"
+                  alt="Ігор Дем'яненко.Product Designer"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="information">
                 <h3 class="list-name">Ігор Дем'яненко</h3>
                 <p class="list-prof">Product Designer</p>
@@ -275,13 +304,42 @@
               </div>
             </li>
             <li class="list-first">
-              <img
-                class="list-foto"
-                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
-                src="./images/img2.jpg"
-                width="270"
-                alt="Ольга Рєпіна.Frontend Developer"
-              />
+              <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img2-desk-1x.jpg 1x,
+                    ./images/img2-desk-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img2-tab-1x.jpg 1x,
+                    ./images/img2-tab-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img2-desk-1x.jpg"
+                  width="270"
+                  alt="Ольга Рєпіна.Frontend Developer"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="information">
                 <h3 class="list-name">Ольга Рєпіна</h3>
                 <p class="list-prof">Frontend Developer</p>
@@ -318,13 +376,42 @@
               </div>
             </li>
             <li class="list-first">
-              <img
-                class="list-foto"
-                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
-                src="./images/img3.jpg"
-                width="270"
-                alt="Микола Тарасов.Marketing"
-              />
+              <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img3-desk-1x.jpg 1x,
+                    ./images/img3-desk-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img3-tab-1x.jpg 1x,
+                    ./images/img3-tab-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img3-desk-1x.jpg"
+                  width="270"
+                  alt="Микола Тарасов.Marketing"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="information">
                 <h3 class="list-name">Микола Тарасов</h3>
                 <p class="list-prof">Marketing</p>
@@ -361,13 +448,42 @@
               </div>
             </li>
             <li class="list-first">
-              <img
-                class="list-foto"
-                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
-                src="./images/img4.jpg"
-                width="270"
-                alt="Михайло Єрмаков.UI Designer"
-              />
+              <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img4-desk-1x.jpg 1x,
+                    ./images/img4-desk-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img4-tab-1x.jpg 1x,
+                    ./images/img4-tab-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img4-desk-1x.jpg"
+                  width="270"
+                  alt="Михайло Єрмаков.UI Designer"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="information">
                 <h3 class="list-name">Михайло Єрмаков</h3>
                 <p class="list-prof">UI Designer</p>
