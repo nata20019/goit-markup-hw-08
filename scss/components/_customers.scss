@@ -1,21 +1,41 @@
 .customers {
-  padding: 94px 0;
+  @media only screen and (max-width: 1199.98px) {
+    padding: 60px 0;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .customers-title {
   color: $title-cl;
   text-align: center;
-  font-size: 36px;
+
   line-height: normal;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+
+  @media only screen and (max-width: 1199.98px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .customers-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .customers-item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+  @media only screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media only screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .customers-link {
   display: flex;

@@ -16,6 +16,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 .factors__items {
@@ -54,6 +55,9 @@
   color: #212121;
 
   margin-bottom: 10px;
+  @media only screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .factors__text {
   color: $main-txt-cl;
