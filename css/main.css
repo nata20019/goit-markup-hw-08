@@ -30,7 +30,6 @@
   border: none;
   display: block;
   margin: 0 auto;
-  margin-bottom: 118px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
@@ -389,8 +388,18 @@ img {
 }
 @media screen and (max-width: 767.98px) {
   .menu-open-btn {
-    padding: 10px 10px;
-    padding-left: auto;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 10px;
+    right: 10px;
     line-height: 0;
     border: none;
     background-color: transparent;
@@ -584,6 +593,7 @@ img {
 }
 
 .solutions {
+  padding: 118px 0;
   background-color: #2e2f42;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mob-1x-min.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x-min.jpg);
@@ -593,7 +603,6 @@ img {
   max-width: 1440px;
   margin: 0;
 }
-
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .solutions {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.4)), to(rgba(17, 17, 17, 0.4))), url("../images/hero-mob-2x-min.jpg");
@@ -624,6 +633,7 @@ img {
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url("../images/hero-desk-2x-min.jpg");
   }
 }
+
 .solution__title {
   color: #fff;
   font-weight: 900;
@@ -632,10 +642,28 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  margin: 118px 60px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
-  width: 360px;
-  height: 84px;
+  max-width: 360px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .solution__title {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .solution__title {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 1.36364;
+  }
 }
 
 .factors {
@@ -648,17 +676,49 @@ img {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 767.98px) {
+  .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .factors__items {
-  width: 264px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 450px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .factors__items {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .factors__items {
+    width: calc((100% - 30px) / 4);
+  }
 }
 
 .items__container {
@@ -680,7 +740,7 @@ img {
 }
 
 .factors__icon {
-  width: 264px;
+  width: 450px;
   height: 112px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -691,12 +751,13 @@ img {
 
 .factors__title {
   color: #212121;
-  font-size: 14px;
-  width: 270px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  width: 450px;
   margin-bottom: 10px;
 }
 
@@ -708,7 +769,11 @@ img {
   letter-spacing: 0.42px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 270px;
+  width: 450px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .doing {

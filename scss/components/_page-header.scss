@@ -99,8 +99,12 @@
 }
 .menu-open-btn {
   @media screen and (max-width: 767.98px) {
-    padding: 10px 10px;
-    padding-left: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
     line-height: 0;
     border: none;
     background-color: transparent;
