@@ -166,12 +166,11 @@
   }
   .mobile-menu.is-open {
     transform: translateX(0);
-  }
-  .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
+
   .menu-close-btn {
     position: absolute;
     top: 10px;
@@ -192,7 +191,6 @@
     // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
-
 @media screen and (min-width: 768px) {
   .menu-open-btn {
     display: none;
