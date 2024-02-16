@@ -14,8 +14,10 @@
     justify-content: space-around;
     align-items: baseline;
   }
+  @media only screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
-
 .page-adress-footer {
   display: flex;
   flex-direction: column;
