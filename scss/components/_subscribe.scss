@@ -1,5 +1,8 @@
 .conteiner-subscribe {
   width: 100%;
+  @media only screen and (min-width: 1200px) {
+    justify-content: end;
+  }
 }
 .subscribe-footer-content {
   color: $logo-light-cl;
@@ -10,6 +13,9 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+  @media only screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .subscribe-form {
   display: flex;
@@ -48,6 +54,9 @@
   }
   @media only screen and (min-width: 768px) {
     width: 450px;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .subscribe-form-btn {
