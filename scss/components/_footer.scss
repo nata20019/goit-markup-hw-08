@@ -6,7 +6,7 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 70px;
   align-items: center;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
@@ -16,11 +16,15 @@
   }
   @media only screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+
+    align-items: baseline;
   }
 }
 .page-adress-footer {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  align-items: center;
+  width: 231px;
+}
+.adress-info-footer {
 }
