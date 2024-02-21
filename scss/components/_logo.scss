@@ -19,6 +19,10 @@
   letter-spacing: 0.78px;
   display: block;
   margin-bottom: 20px;
+  @media only screen and (max-width: 767.98px) {
+    justify-content: center;
+    display: flex;
+  }
 }
 .logo-light {
   color: $logo-light-cl;
