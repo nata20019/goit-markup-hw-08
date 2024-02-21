@@ -49,81 +49,15 @@
             >
           </li>
         </ul>
-        <button class="menu-open-btn" type="button" data-menu-open>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40" fill="currentColor">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-      </div>
-      <div class="backdrop is-hidden" data-menu>
-        <div class="mobile-menu is-open">
-          <button class="menu-close-btn" type="button" data-menu-close>
-            <svg width="11" height="11">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="menu-nav">
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="./index.html">Студія</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="./index.html">Контакти</a>
-            </li>
-          </ul>
-          <ul class="menu-adress">
-            <li class="menu-adress-item">
-              <a class="menu-adress-tel" href="tel:+380961111111"
-                >+38 096 111 11 11
-              </a>
-            </li>
-            <li class="menu-adress-item">
-              <a class="menu-adress-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="menu-social">
-            <li class="menu-social-item">
-              <a
-                class="menu-social-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li class="menu-social-item">
-              <a
-                class="menu-social-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Twitter</a
-              >
-            </li>
-            <li class="menu-social-item">
-              <a
-                class="menu-social-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li class="menu-social-item">
-              <a
-                class="menu-social-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
     </header>
     <main>
@@ -453,5 +387,80 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="11" height="11">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu-adress">
+        <li class="menu-adress-item">
+          <a class="menu-adress-tel" href="tel:+380961111111"
+            >+38 096 111 11 11
+          </a>
+        </li>
+        <li class="menu-adress-item">
+          <a class="menu-adress-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="menu-social">
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu-social-item">
+          <a
+            class="menu-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
