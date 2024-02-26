@@ -23,7 +23,14 @@
     justify-content: center;
     display: flex;
   }
+  @media only screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media only screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .logo-light {
   color: $logo-light-cl;
 }

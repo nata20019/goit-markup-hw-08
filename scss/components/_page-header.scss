@@ -1,3 +1,10 @@
+.up-block {
+  color: #e7e9fc;
+  color: #ffffff;
+  box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-bottom: 1px solid #e7e9fc;
+}
 .nav-header {
   display: flex;
   align-items: center;
@@ -18,6 +25,8 @@
   &:hover,
   &:focus {
     color: $accent-cl;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .link.active {
@@ -55,6 +64,8 @@
   &:hover,
   &:focus {
     color: $accent-cl;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu-nav {
@@ -68,12 +79,22 @@
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #212121;
+  @media only screen and (max-width: 479.99px) {
+    font-size: 30px;
+    letter-spacing: 0.01em;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-cl;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .menu-adress {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: 306px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -82,12 +103,20 @@
   font-size: 34px;
   letter-spacing: 0.02em;
   color: #2196f3;
+  @media only screen and (max-width: 479.99px) {
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
 }
 .menu-adress-mail {
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.02em;
   color: #757575;
+  @media only screen and (max-width: 479.99px) {
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
 }
 .menu-social {
   display: flex;
@@ -112,6 +141,10 @@
     position: absolute;
     display: flex;
     width: 100%;
+  }
+  @media only screen and (max-width: 479.99px) {
+    font-size: 10px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -149,7 +182,9 @@
 
     &:hover,
     &:focus {
-      fill: 2196F3;
+      color: #2196f3;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -181,8 +216,8 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  width: 29px;
-  height: 29px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   line-height: 0;
   background-color: transparent;
@@ -190,11 +225,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid rgba(231, 233, 252, 1);
-  // fill: #212121;
-  // stroke-width: 1px;
-  // stroke: #000;
-  // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &:focus,
+  &:hover {
+    fill: $accent-cl;
+  }
 }
 
 @media screen and (min-width: 768px) {
