@@ -82,12 +82,12 @@
   @media only screen and (max-width: 479.99px) {
     font-size: 30px;
     letter-spacing: 0.01em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:hover,
   &:focus {
     color: $accent-cl;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu-adress {
@@ -179,6 +179,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -225,6 +227,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {

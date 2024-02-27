@@ -392,14 +392,14 @@ img {
   .menu-nav-link {
     font-size: 30px;
     letter-spacing: 0.01em;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu-nav-link:hover, .menu-nav-link:focus {
   color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-adress {
@@ -519,6 +519,10 @@ img {
     padding: 0;
     border: none;
     background-color: transparent;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-toggle:hover, .menu-toggle:focus {
     color: #2196f3;
@@ -579,6 +583,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container .menu-toggle:focus, .menu-container .menu-toggle:hover {
   fill: #2196f3;
@@ -714,7 +722,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
