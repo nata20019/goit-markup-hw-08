@@ -1307,6 +1307,13 @@ img {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+@media only screen and (max-width: 480px) {
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+  }
+}
 
 .modal-close-btm {
   position: absolute;
@@ -1346,6 +1353,11 @@ img {
 .modal-field {
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 480px) {
+  .modal-field {
+    margin-bottom: 5px;
+  }
+}
 
 .modal-label {
   color: #757575;
@@ -1375,6 +1387,11 @@ img {
 }
 .modal-input:focus {
   border-color: #2196f3;
+}
+@media only screen and (max-width: 480px) {
+  .modal-input {
+    height: 100%;
+  }
 }
 
 .modal-input:focus + .modal-icon {
@@ -1482,6 +1499,12 @@ img {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
+@media only screen and (max-width: 480px) {
+  .form-policy-desc {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .privacy-link {
   color: #2196f3;
@@ -1527,6 +1550,11 @@ img {
   background: #188ce8;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media only screen and (max-width: 480px) {
+  .modal-send-btn {
+    margin-top: 10px;
+  }
 }
 
 .conteiner-subscribe {
